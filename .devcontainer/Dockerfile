@@ -15,8 +15,7 @@ RUN sudo apt-get install software-properties-common --assume-yes
 RUN sudo add-apt-repository ppa:deadsnakes/ppa
 RUN sudo apt-get update
 RUN sudo apt-get install python3.9 python3-pip --assume-yes
-RUN sudo pip3 install meson==1.3.1
-RUN sudo pip3 install conan==2.0.16
+RUN sudo pip3 install meson==1.3.1 conan==2.0.16 ninja
 
 # [Optional] Uncomment this section to install additional vcpkg ports.
 # RUN su vscode -c "${VCPKG_ROOT}/vcpkg install <your-port-name-here>"
